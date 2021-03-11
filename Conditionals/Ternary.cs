@@ -15,14 +15,14 @@ namespace Conditionals
         {
             int age = 31;
 
-            bool isadult = (age > 17)  ? true : false;
+            bool isadult = (age > 17) ? true : false;
             Console.WriteLine("Age is over 17:" + isadult);
 
             int numOne = 10;
             int numTwo = (numOne == 10) ? 30: 20;
             Console.WriteLine(numTwo);
-
             Console.WriteLine((numTwo == 30) ? "true" : "false");
+      
         }
 
     }
