@@ -49,8 +49,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animals.cs" />
-    <Compile Include="Cats.cs" />
+    <Compile Include="Animals\Animals.cs" />
+    <Compile Include="Animals\Cats.cs" />
+    <Compile Include="House.cs" />
+    <Compile Include="Kitchen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

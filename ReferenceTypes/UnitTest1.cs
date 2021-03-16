@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 
@@ -26,19 +26,23 @@ namespace ReferenceTypes
             Console.WriteLine(concatenatedFullName);
             Console.WriteLine(interpolationFullName);
             Console.WriteLine(compositeFullName);
-            
+
         }
         [TestMethod]
         public void Collections()
         {
             string stringExample = "Hello World";
             string[] stringArray = { "Hello", "World", "Why", "is it", "always", stringExample };
+           
 
-            string thirdItem = stringArray[2];
+            string thirdItem = stringArray[2]; //Arrays are Zero indexed, as its start with number 0
             Console.WriteLine(thirdItem);
 
             stringArray[0] = "Hey There";
             Console.WriteLine(stringArray[0]);
+           
+           
+          
             // ctrl . creates new List/ queue
             List<string> listOfStrings = new List<string>();
             List<int> listOfInts = new List<int>();
@@ -55,6 +59,7 @@ namespace ReferenceTypes
 
             string firstItem = firstInFirstOut.Dequeue();
             Console.WriteLine(firstItem);
+            string secondItem = firstInFirstOut.Peek();
 
             Dictionary<int, string> keyAndValue = new Dictionary<int, string>();
 
